@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AboutController">
+   <children>
+      <Label layoutX="39.0" layoutY="14.0" prefHeight="32.0" prefWidth="411.0" text="QuickBill for Supermarkets" textAlignment="JUSTIFY" textFill="#221179">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.91" topOpacity="0.32" />
+         </effect>
+      </Label>
+      <ImageView fitHeight="112.0" fitWidth="125.0" layoutX="328.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/kumar.jpeg" />
+         </image>
+         <effect>
+            <DropShadow height="33.14" offsetX="10.0" offsetY="10.0" radius="16.07" width="33.14" />
+         </effect>
+      </ImageView>
+      <Label layoutX="93.0" layoutY="108.0" text="Version 1.0.0" />
+      <Label layoutX="61.0" layoutY="152.0" text="Developed by Kumar Dhakal" />
+      <Hyperlink fx:id="email" layoutX="61.0" layoutY="190.0" onAction="#emailHandler" onMouseClicked="#emailHandler" text="dhakalkumar10@gmail.com" textAlignment="JUSTIFY" />
+      <Hyperlink fx:id="github" layoutX="140.0" layoutY="256.0" onMouseClicked="#githubHandler" text="https://dhakalkumar.github.io" textAlignment="JUSTIFY" />
+   </children>
+</AnchorPane>

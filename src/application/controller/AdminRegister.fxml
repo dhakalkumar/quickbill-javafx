@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="468.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AdminRegisterController">
+   <children>
+      <VBox alignment="TOP_RIGHT" layoutX="15.0" layoutY="65.0" prefHeight="212.0" prefWidth="141.0" spacing="5.0">
+         <children>
+            <Label text="First Name:">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label text="Last Name:">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label text="Username:">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label text="Password:">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label text="Confirm password:">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label text="Date of Birth:">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label text="Address:">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="53.0" layoutY="14.0" text="Register a new Account" textAlignment="JUSTIFY" textFill="#0c0279">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="428.0" text="Already have an account? Please ">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <VBox layoutX="176.0" layoutY="65.0" spacing="5.0">
+         <children>
+            <TextField fx:id="firstName" promptText="First Name">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="lastName" layoutX="10.0" layoutY="10.0" promptText="Last Name">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="username" layoutX="10.0" layoutY="10.0" promptText="Username">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <PasswordField fx:id="password" promptText="Password" />
+            <PasswordField fx:id="cPassword" promptText="Confirm Password" />
+            <DatePicker fx:id="dob" promptText="Date of Birth" />
+            <TextArea fx:id="address" prefHeight="87.0" prefWidth="198.0" promptText="Address" />
+         </children>
+      </VBox>
+      <HBox layoutX="97.0" layoutY="363.0" prefHeight="40.0" prefWidth="250.0" spacing="100.0">
+         <children>
+            <Button fx:id="registerButton" mnemonicParsing="false" onAction="#registerButtonHandler" text="Register" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonHandler" text="Cancel" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Hyperlink fx:id="loginLink" layoutX="310.0" layoutY="429.0" onAction="#loginLinkHandler" text="login" />
+   </children>
+</AnchorPane>

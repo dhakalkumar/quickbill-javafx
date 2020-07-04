@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WelcomeController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="TEXT_ONLY" prefHeight="63.0" prefWidth="605.0" text="Welcome to QuickBill for Supermarkets" textAlignment="CENTER" textFill="#491275">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="92.0" layoutY="103.0" preserveRatio="true">
+         <image>
+            <Image url="@../icons/iconQuickbill.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="adminLoginButton" layoutX="386.0" layoutY="125.0" mnemonicParsing="false" onAction="#adminLoginHandler" prefHeight="35.0" prefWidth="128.0" text="Admin Login" />
+      <Button fx:id="cashierLoginButton" layoutX="383.0" layoutY="196.0" mnemonicParsing="false" onAction="#cashierLoginHandler" prefHeight="35.0" prefWidth="128.0" text="Cashier Login" />
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="245.0" layoutY="307.0" text="(C) Kumar Dhakal" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+      </Label>
+      <Label layoutX="97.0" layoutY="231.0" text="QuickBill">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="514.0" layoutY="293.0" onAction="#aboutController" text="About" textFill="#201ca1" />
+   </children>
+</AnchorPane>
